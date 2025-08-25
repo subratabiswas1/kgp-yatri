@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "kgp_yatri",
+    "slug": "kgp_yatri",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "uberclonemobile",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "assets": ["./assets/fonts"],
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "process.env.EXPO_PUBLIC_GOOGLE_API_KEY"
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to location to show your position on the map.",
+        "NSLocationAlwaysUsageDescription": "This app needs access to location to show your position on the map."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "process.env.EXPO_PUBLIC_GOOGLE_API_KEY"
+        }
+      },
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "favicon": "./assets/images/favicon.png",
+      "config": {
+        "googleMaps": {
+          "apiKey": "process.env.EXPO_PUBLIC_GOOGLE_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#2f80ed"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
