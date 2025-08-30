@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# 🚖 KGP YATRI App (Expo + Expo Router Tabs)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a **React Native app built with Expo Router**.  
+It features a **tab-based navigation** with screens for Home, Rides, Chat, and Profile.  
 
-## Get started
+---
 
-1. Install dependencies
+## 📂 Project Structure
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```plaintext
+app/
+│── _layout.tsx   # Root layout, defines Tab Navigator
+│── home.tsx      # Home screen
+│── rides.tsx     # Rides screen
+│── chat.tsx      # Chat screen
+│── profile.tsx   # Profile screen
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **`_layout.tsx`** → Sets up the bottom tab navigation using Expo Router.  
+- **Other screens** (`home.tsx`, `rides.tsx`, `chat.tsx`, `profile.tsx`) are linked directly to the tabs.  
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+# 🛠️ Tech Stack
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Expo](https://expo.dev/) (React Native framework)  
+- [Expo Router](https://expo.github.io/router) (file-based routing)  
+- [React Navigation](https://reactnavigation.org/) (tabs & navigation under the hood)  
+- TypeScript  
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+# ▶️ Getting Started
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 1. Clone the repository
+```bash
+git clone https://github.com/subratabiswas1/kgp_yatri.git
+cd kgp_yatri
+```
+## 2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+## 3. Run the app
+```bash
+npx expo start
+```
+Scan the QR code with your phone (Expo Go app) or run on an emulator.
+
+## 📱 Features
+Bottom Tab Navigation
+
+🏠 Home  
+🚘 Rides  
+💬 Chat  
+👤 Profile  
+
+Organized using Expo Router’s file system-based navigation.
+
+
+## 📸 Screenshots
+<p align="center">
+<img src="https://github.com/Akashkittu/kgp_yatri/blob/main/image_2.jpg?raw=true" width="250"/>
+<img src="https://github.com/Akashkittu/kgp_yatri/blob/main/_image3.jpg?raw=true" width="250"/> 
+<img src="https://github.com/Akashkittu/kgp_yatri/blob/main/image4.jpg?raw=true" width="250"/>
+</p>
+
+
+## 👨‍💻 Contributing
+
+Feel free to fork this repository, create a branch, and submit a pull request for improvements.
+
+
+## Contact
+
+For any queries, feel free to reach out at [biswass83803@gmail.com].
